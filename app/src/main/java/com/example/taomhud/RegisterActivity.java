@@ -6,18 +6,20 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity {
-    private Button btn_loaddk;
+public class RegisterActivity extends AppCompatActivity {
+
+    private Button btn_Dacotk;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.register);
 
-        btn_loaddk=findViewById(R.id.btn_loaddk);
+        btn_Dacotk = findViewById(R.id.btn_Dacotk);
 
-        btn_loaddk.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+        btn_Dacotk.setOnClickListener(v -> {
+            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
             startActivity(intent);
         });
+
     }
 }
